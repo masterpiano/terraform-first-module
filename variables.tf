@@ -1,15 +1,9 @@
-variable "ec2_type" {
+variable "my_ami" {
     type = string
-    default = "t2.micro"
+    default = "ami-0e8a34246278c21e4"
 }
 
-variable "ami" {
+variable "region" {
     type = string
-}
-
-variable "tags" {
-    type = map(string)
-    default = {
-      "Name" = "tf-machine"
-    }
+    default = "us-east-1"
 }
